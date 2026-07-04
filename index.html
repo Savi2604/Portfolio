@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAVITHA K — Developer Portfolio</title>
+  <meta name="description" content="Savitha K — B.Tech Information Technology student & developer. Luminous glassmorphic neon-tech portfolio featuring projects, skills telemetry and an interactive shell." />
+  <meta name="author" content="Savitha K" />
+
+  <!-- Inline SVG favicon (neon SK monogram) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23070314'/%3E%3Ctext x='50%25' y='54%25' font-family='Arial' font-size='30' font-weight='bold' fill='%2300f0ff' text-anchor='middle' dominant-baseline='middle'%3ESK%3C/text%3E%3C/svg%3E" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="SAVITHA K — Developer Portfolio" />
+  <meta property="og:description" content="Interactive glassmorphic neon-tech portfolio: projects, skill telemetry & a live shell console." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Chart.js (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Ambient background -->
+  <div class="bg-aurora"></div>
+  <div class="bg-grid"></div>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <main class="shell">
+    <!-- ============ TOP BAR ============ -->
+    <header class="glass topbar reveal">
+      <div class="brand">
+        <div class="brand-mark">SK</div>
+        <div>
+          <div class="brand-name">SAVITHA <span>K</span></div>
+          <div class="brand-role">Information Technology · Developer</div>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="#profile">Profile</a>
+        <a href="#projects">Projects</a>
+        <a href="#telemetry">Telemetry</a>
+        <a href="#terminal">Terminal</a>
+      </nav>
+      <div class="status-dot"><i></i> SYSTEMS ONLINE</div>
+    </header>
+
+    <!-- ============ 3-COLUMN GRID ============ -->
+    <section class="grid-3">
+
+      <!-- ---------- LEFT: PROJECT STREAMS ---------- -->
+      <div class="col" id="projects">
+        <div class="glass panel-pad reveal">
+          <div class="panel-head">
+            <span class="tick"></span>
+            <h2>Project Streams</h2>
+          </div>
+
+          <div class="project">
+            <h3><span class="dot"></span> College Connect</h3>
+            <div class="ptype">Web Portal · Students &amp; Administration</div>
+            <p>Centralized communication matrix with digital attendance &amp; marks logging engines, leave-request approval workflows and role-based authentication layers.</p>
+            <div class="tech-row">
+              <span class="tech">HTML</span>
+              <span class="tech">CSS</span>
+              <span class="tech">JavaScript</span>
+              <span class="tech">Firebase</span>
+            </div>
+          </div>
+
+          <div class="project">
+            <h3><span class="dot"></span> Secure User Profile Management</h3>
+            <div class="ptype">Full-Stack · Auth &amp; Data Security</div>
+            <p>Secure login protocols with session-based authentication states, Gmail-only validation via custom Regex engines and profile image uploads.</p>
+            <div class="tech-row">
+              <span class="tech">Bootstrap</span>
+              <span class="tech">JavaScript</span>
+              <span class="tech">PHP</span>
+              <span class="tech">MySQL</span>
+              <span class="tech">AWS EC2</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass panel-pad reveal">
+          <div class="panel-head">
+            <span class="tick"></span>
+            <h2>Achievements &amp; Certifications</h2>
+          </div>
+          <div class="ach-item"><span class="badge">C</span><span><b>Problem Solving through Programming in C</b> — NPTEL, 2025</span></div>
+          <div class="ach-item"><span class="badge">J</span><span><b>Java Programming Fundamentals</b> — Infosys, 2025</span></div>
+          <div class="ach-item"><span class="badge">☁</span><span><b>Cloud Infrastructure</b> — Oracle, 2025</span></div>
+          <div class="ach-item"><span class="badge">★</span><span><b>Paper Presentation</b> — GCE Salem</span></div>
+          <div class="ach-item"><span class="badge">⚡</span><span><b>HACKXPO'26</b> — Hackathon Participant</span></div>
+        </div>
+      </div>
+
+      <!-- ---------- CENTER: PROFILE CORE ---------- -->
+      <div class="col col-center" id="profile">
+        <div class="glass profile-core reveal">
+          <div class="avatar"><span>SK</span></div>
+          <h1>SAVITHA K</h1>
+          <div class="subtitle">B.Tech · Information Technology Student</div>
+          <div class="institute">Government College of Engineering, Erode</div>
+          <div class="cgpa-badge">◆ CGPA 8.6 / 10</div>
+
+          <p class="bio">
+            Aspiring software developer building secure, data-driven web
+            applications — from role-based college portals to cloud-deployed
+            authentication systems. Passionate about clean engineering,
+            cloud infrastructure and delightful interfaces.
+          </p>
+
+          <div class="contact-row">
+            <a class="btn btn-primary" href="mailto:savithak2006@gmail.com">✉ Email</a>
+            <a class="btn" href="https://github.com/Savi2604" target="_blank" rel="noopener">⌥ GitHub</a>
+            <a class="btn" href="https://www.linkedin.com/in/savitha-k-44169a357" target="_blank" rel="noopener">in LinkedIn</a>
+          </div>
+
+          <div class="stat-strip">
+            <div class="stat"><b>8.6</b><small>CGPA</small></div>
+            <div class="stat"><b>2</b><small>Projects</small></div>
+            <div class="stat"><b>5+</b><small>Certs</small></div>
+          </div>
+        </div>
+
+        <div class="glass panel-pad reveal">
+          <div class="panel-head">
+            <span class="tick"></span>
+            <h2>Tech Arsenal</h2>
+          </div>
+
+          <div class="subhead">Core Languages</div>
+          <div class="chips">
+            <span class="chip cyan">Java</span>
+            <span class="chip cyan">Python</span>
+            <span class="chip cyan">JavaScript</span>
+            <span class="chip cyan">HTML</span>
+            <span class="chip cyan">CSS</span>
+            <span class="chip cyan">C</span>
+          </div>
+
+          <div class="subhead">Platforms &amp; Tools</div>
+          <div class="chips">
+            <span class="chip">Oracle Cloud (OCI)</span>
+            <span class="chip">Git / GitHub</span>
+            <span class="chip">Firebase</span>
+            <span class="chip">MySQL</span>
+            <span class="chip">Power BI</span>
+            <span class="chip">Canva</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---------- RIGHT: ANALYTICS & TELEMETRY ---------- -->
+      <div class="col" id="telemetry">
+        <div class="glass panel-pad reveal">
+          <div class="panel-head">
+            <span class="tick"></span>
+            <h2>Skill Proficiency Density</h2>
+          </div>
+          <div class="chart-box"><canvas id="radarChart"></canvas></div>
+        </div>
+
+        <div class="glass panel-pad reveal">
+          <div class="panel-head">
+            <span class="tick"></span>
+            <h2>Live Portfolio Traffic Ingestion</h2>
+          </div>
+          <div class="chart-box small"><canvas id="lineChart"></canvas></div>
+          <div class="metric-row">
+            <div class="metric"><small>Live Visitors</small><b id="m-visitors">128</b></div>
+            <div class="metric amethyst"><small>Requests / s</small><b id="m-rps">42</b></div>
+            <div class="metric"><small>Uptime</small><b>99.9%</b></div>
+            <div class="metric amethyst"><small>Latency</small><b id="m-lat">38ms</b></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BOTTOM: INTERACTIVE TERMINAL ============ -->
+    <section class="terminal-wrap glass reveal" id="terminal">
+      <div class="terminal">
+        <div class="term-head">
+          <div class="term-dots"><i class="r"></i><i class="y"></i><i class="g"></i></div>
+          <span class="term-title">guest@savitha-portfolio: ~</span>
+          <span class="term-hint">try <b>help</b> · about · skills · projects · clear</span>
+        </div>
+        <div class="term-body" id="term-body">
+          <!-- output injected by JS -->
+          <div class="term-input-line">
+            <span class="prompt">guest@savitha-portfolio</span><span class="out-white">:</span><span class="path">~</span><span class="out-white">$</span>
+            <input id="term-input" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="terminal input" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Crafted with neon &amp; glass · © <span id="year"></span> Savitha K ·
+        <a href="mailto:savithak2006@gmail.com">savithak2006@gmail.com</a></p>
+    </footer>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
